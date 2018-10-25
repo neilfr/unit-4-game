@@ -18,8 +18,8 @@ function reset(){
     emeraldValue=Math.floor(Math.random()*12+1);
     targetScore=Math.floor(Math.random()*101+19);
     playerScore=0;
-    $('#targetScore').html('Target: '+targetScore);
-    $('#playerScore').html('Your total score is: '+playerScore);
+    $('#targetScore').html('Your target score is: '+targetScore);
+    $('#playerScore').html('Your score so far is: '+playerScore);
 }
 
 function checkScore(){
@@ -39,25 +39,25 @@ reset();
 
 $('#ruby').on('click', function(){
     playerScore+=rubyValue;
-    $('#playerScore').html('Your total score is: '+playerScore);
+    $('#playerScore').html('Your score so far is: '+playerScore);
     checkScore();
 });
 
 $('#sapphire').on('click', function(){
     playerScore+=sapphireValue;
-    $('#playerScore').html("Your total score is: "+playerScore);
+    $('#playerScore').html('Your score so far is: '+playerScore);
     checkScore();
 });
 
 $('#amber').on('click', function(){
     playerScore+=amberValue;
-    $('#playerScore').html("Your total score is: "+playerScore);
+    $('#playerScore').html('Your score so far is: '+playerScore);
     checkScore();
 });
 
 $('#emerald').on('click', function(){
     playerScore+=emeraldValue;
-    $('#playerScore').html("Your total score is: "+playerScore);
+    $('#playerScore').html('Your score so far is: '+playerScore);
     checkScore();
 });
 

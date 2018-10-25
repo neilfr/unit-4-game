@@ -1,19 +1,46 @@
+body{
+    font-family:arial;
+}
+
+h1{
+    background-color:darkorange;
+    color:white;
+    font-weight:bold;
+    font-size:2em;
+    padding:10px 0px;
+}
+
+#instructions{
+    background-color:bisque;
+    line-height:1.5em;
+    color:black;
+}
+
+p{
+    margin:0.5em;
+}
+
+#targetScore, #playerScore, #wins, #losses{
+    font-size:2em;
+    background-color:darkorange;
+    color:white;
+    margin: 5px 0px;
+}
+
 .gem{
-    width: 100px;
-    height: 100px;
+    width:25%;
 }
-#ruby{
-    background-color:red;
-}
-
-#sapphire{
-    background-color:blue;
+#gems{
+    height:100px;
+    display:flex;
+    flex-direction:row;
 }
 
-#amber{
-    background-color:yellow;
+#wins{
+    clear:left;
 }
 
-#emerald{
-    background-color:green;
+.myImage{
+    width:auto;
+    height:100%
 }

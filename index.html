@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>Crystal Game</title>
+        <title>Gem Collector!</title>
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
         
@@ -11,16 +11,30 @@
     </head>
 
     <body>
-        <h1>Crystal Game</h1>
+        <h1>Gem Collector</h1>
+        <div id="instructions">
+            <p>Win by matching your score to the target score</p>
+            <p>Each gem below has a secret random value each game</p>
+            <p>Click on a gem, and add that tile's secret value to your score</p>
+        </div>
         <div id="targetScore"></div>
+        <div id="playerScore"></div>
+        <div id="gems">
+            <div class="gem">
+                <img id="ruby" class="myImage" src="assets/images/ruby.jfif" alt="ruby">
+            </div>
+            <div class="gem">
+                <img id="sapphire" class="myImage" src="assets/images/sapphire.jfif" alt="ruby">
+            </div>
+            <div class="gem">
+                <img id="amber" class="myImage" src="assets/images/amber.jfif" alt="ruby">
+            </div>
+            <div class="gem">
+                <img id="emerald" class="myImage" src="assets/images/emerald.jfif" alt="ruby">
+            </div>
+        </div>
         <div id="wins"></div>
         <div id="losses"></div>
-        <div id="ruby" class="gem"></div>
-        <div id="sapphire" class="gem"></div>
-        <div id="amber" class="gem"></div>
-        <div id="emerald" class="gem"></div>
-        <div id="playerScore"></div>
-        <div id="test"></div>
     </body>
 
     <script src="assets/javascript/game.js"></script>
