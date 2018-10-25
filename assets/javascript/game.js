@@ -1,3 +1,4 @@
+var numGems = 4;
 var wins=0;
 var losses=0;
 $('#wins').html("Wins: "+wins);
@@ -10,7 +11,6 @@ var emeraldValue;
 var targetScore;
 var playerScore;
 
-console.log(test);
 function reset(){
     rubyValue=Math.floor(Math.random()*12+1);
     sapphireValue=Math.floor(Math.random()*12+1);
@@ -44,7 +44,6 @@ $('#ruby').on('click', function(){
 });
 
 $('#sapphire').on('click', function(){
-    console.log('clicked sapphire!');
     playerScore+=sapphireValue;
     $('#playerScore').html("Your total score is: "+playerScore);
     checkScore();
