@@ -1,0 +1,19 @@
+.gem{
+    width: 100px;
+    height: 100px;
+}
+#ruby{
+    background-color:red;
+}
+
+#sapphire{
+    background-color:blue;
+}
+
+#amber{
+    background-color:yellow;
+}
+
+#emerald{
+    background-color:green;
+}
